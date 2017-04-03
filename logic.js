@@ -198,6 +198,11 @@ http://ricostacruz.com/cheatsheets/umdjs.html
 
     data = data || {};
 
+    // If logic is empty object, return true.
+    if (Object.keys(logic).length === 0) {
+      return true;
+    }
+
     var op = Object.keys(logic)[0];
     var values = logic[op];
     var i;
