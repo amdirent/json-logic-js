@@ -82,6 +82,9 @@ http://ricostacruz.com/cheatsheets/umdjs.html
     "endsWith": function(a, b) {
       return (b.indexOf(a, b.length - a.length) !== -1);
     },
+    "search": function(a, b) {
+      return (b.search(a) !== -1);
+    },
     "+": function() {
       return Array.prototype.reduce.call(arguments, function(a, b) {
         return parseFloat(a, 10) + parseFloat(b, 10);
